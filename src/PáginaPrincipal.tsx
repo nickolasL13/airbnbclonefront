@@ -14,9 +14,7 @@ export default function PaginaPrincipal() {
             setCarregando(true);
 
             try {
-                const resultado = await fetch('https://ws-airbnbclone-1226.herokuapp.com/', {
-                    method: "GET",
-                });
+                const resultado = await fetch('https://ws-airbnbclone-1226.herokuapp.com/');
                 if (resultado.ok) {
                     const dados: Array<Imovel> = await resultado.json();
                     setDados(dados);
