@@ -1,14 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PaginaSobre from './PáginaSobre';
 import App from './App';
 import PaginaNaoEncontrada from './PáginaNãoEncontrada';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import PaginaPrincipal from './PáginaPrincipal'
-
-
-
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,7 +12,6 @@ ReactDOM.render(
     <Routes>
       <Route path= "/" element={<App />}>
         <Route index element={< PaginaPrincipal />}/>
-        <Route path= "sobre" element={<PaginaSobre/>}/>
         <Route path= "*" element= {<PaginaNaoEncontrada />}/>
       </Route>
     </Routes>

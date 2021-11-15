@@ -1,21 +1,17 @@
 import React from 'react';
-import {Outlet, Link} from 'react-router-dom';
+import {Outlet} from 'react-router-dom';
 
 function App() {
   return (
     <>
     <header>
-      <h1>REACT ROUTER DEMO</h1>
-      <nav>
-        <Link to="/">Principal</Link> | {' '}
-        <Link to="/sobre">Sobre</Link>
-      </nav>
+      <h1>AIRBNB CLONE DEMO</h1>
     </header>
     <main>
       <Outlet></Outlet>
     </main>
     <footer>
-      <p>Desenvolvido com React e React-router</p>
+      <p>Airbnb Clone v.yn</p>
     </footer>
     </>
   );
