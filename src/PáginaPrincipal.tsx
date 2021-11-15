@@ -4,7 +4,7 @@ import fetch from 'node-fetch';
 
 export default function PaginaPrincipal() {
     const [dados, setDados] = useState<Array<Imovel>>();
-    const [url, setUrl] = useState(process.env.URL!);
+    // const [url, setUrl] = useState(process.env.URL!);
     const [carregando, setCarregando] = useState(false);
     const [erro, setErro] = useState(false);
 
@@ -14,7 +14,9 @@ export default function PaginaPrincipal() {
             setCarregando(true);
 
             try {
-                const resultado = await fetch(process.env.URL!);
+                const resultado = await fetch('https://ws-airbnbclone-1226.herokuapp.com/', {
+                    method: "GET",
+                });
                 if (resultado.ok) {
                     const dados: Array<Imovel> = await resultado.json();
                     setDados(dados);
