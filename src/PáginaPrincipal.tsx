@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Imovel from './backend/DTO/dtos';
+import fetch from 'node-fetch';
 
 export default function PaginaPrincipal() {
     const [dados, setDados] = useState<Array<Imovel>>();
