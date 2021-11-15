@@ -14,7 +14,7 @@ export default function PaginaPrincipal() {
             setCarregando(true);
 
             try {
-                const resultado = await fetch(url);
+                const resultado = await fetch(process.env.URL!);
                 if (resultado.ok) {
                     const dados: Array<Imovel> = await resultado.json();
                     setDados(dados);
