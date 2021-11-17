@@ -18,7 +18,7 @@ O projeto foi feito com as seguintes tecnologias:
 #### Clonando o projeto
 
 ```sh
-$ git clone https://github.com/ysncastro/airbnbcloneback.git
+$ git clone https://github.com/nickolasL13/airbnbclonefront.git
 ```
 
 #### Instalando os módulos
