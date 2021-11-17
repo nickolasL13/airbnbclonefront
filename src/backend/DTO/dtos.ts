@@ -1,14 +1,20 @@
-export interface TaxaDeServico {
+interface TaxaDeServico {
     cobra: boolean,
     valorPerDay?: number,
 }
 
-export interface TaxaDeLimpeza {
+interface TaxaDeLimpeza {
     cobra: boolean,
     valor?: number,
 }
 
-export interface Imovel {
+interface Lugar {
+    cidade: string,
+    estado: string,
+    endereco: string,
+}
+
+export default interface Imovel {
     iId: string,
     espaco: string
     label: string,
@@ -20,9 +26,11 @@ export interface Imovel {
     wifi: boolean,
     cozinha: boolean,
     freeParking: boolean,
+    piscina: boolean, 
     pricePerNight: number,
+    descricao: string,
+    lugar: Lugar,
     taxaDeServico: TaxaDeServico,
     taxaDeLimpeza: TaxaDeLimpeza,
+    photo: string,
 }
-
-export default Imovel;

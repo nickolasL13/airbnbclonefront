@@ -1,0 +1,98 @@
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    text-decoration: none;
+    }
+
+body {
+    width: 100%;
+}
+
+.botaolindo {
+    color: red;
+    border-radius: 50px;
+    height: max-content;
+    margin-left: 210px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: transparent;
+  }
+
+.botaolindo:hover {
+    color: black;
+}
+
+.containerImoveis {
+    width: 500px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.navbar-light .navbar-brand {
+    color: red;
+    margin-left: 15px;
+}
+
+.vyn {
+    margin-left: 200px;
+    color: red;
+}
+
+.ImovelContainer {
+    margin-left:15px;
+    margin-bottom: 15px;
+    width: 450px;
+}
+
+.ImovelButton {
+    width: 450px;
+}
+
+.welcome {
+    margin-left: 143px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.mb-3 {
+    margin-left: 1.1%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    width: 500px;
+}
+
+.dropButton {
+    background-color: transparent;
+    color: black;
+    border: solid transparent;
+    margin-left: 18.5%;
+}
+
+.dropButton:hover {
+    background-color: transparent;
+    color: black;
+    border: solid transparent;
+}
+
+.main {
+    margin-left:35%;    
+}
+
+.ImageButton {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.price {
+    margin-top: 17px;
+}
+
+.offers {
+    color: red;
+}
